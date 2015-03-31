@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="210mm"
+   id="svg7351"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="herfline_final.pdf">
+  <defs
+     id="defs7353">
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="TriangleOutM"
+       style="overflow:visible">
+      <path
+         id="path6004"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.4)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="TriangleOutL"
+       style="overflow:visible">
+      <path
+         id="path6001"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path5862"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <clipPath
+       id="clipPath7396"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7398"
+         d="m 55.67,28.67 460.19,0 0,491.68 -460.19,0 0,-491.68 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath7380"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7382"
+         d="M 0,0 737,0 737,552 0,552 0,0 z" />
+    </clipPath>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5880"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <clipPath
+       id="clipPath12164"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path12166"
+         d="m 55.67,28.67 460.19,0 0,491.68 -460.19,0 0,-491.68 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath12148"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path12150"
+         d="M 0,0 737,0 737,552 0,552 0,0 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath13036"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path13038"
+         d="m 50.11,28.67 530.32,0 0,476.13 -530.32,0 0,-476.13 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath13470"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path13472"
+         d="m 50.11,28.67 530.32,0 0,476.13 -530.32,0 0,-476.13 z" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.86831672"
+     inkscape:cx="643.04718"
+     inkscape:cy="382.37498"
+     inkscape:current-layer="g7368"
+     id="namedview7355"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="1028"
+     inkscape:window-x="1912"
+     inkscape:window-y="22"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7357">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="matrix(1.25,0,0,-1.25,59.922392,718.26207)"
+       inkscape:label="gdpcompare"
+       id="g7368">
+      <g
+         id="g7370" />
+      <g
+         id="g7372" />
+      <g
+         id="g7374" />
+      <g
+         id="g7386" />
+      <g
+         id="g7388" />
+      <g
+         id="g7390" />
+      <g
+         id="g7796" />
+      <g
+         id="g7824" />
+      <g
+         id="g7826" />
+      <g
+         id="g7828" />
+      <g
+         id="g7830" />
+      <g
+         id="g7832" />
+      <g
+         id="g7834" />
+      <g
+         id="g7840" />
+      <g
+         id="g7842" />
+      <g
+         id="g7870" />
+      <g
+         id="g7872" />
+      <g
+         id="g7874" />
+      <g
+         id="g7876" />
+      <g
+         id="g7878" />
+      <g
+         id="g7880" />
+      <g
+         id="g7888" />
+      <g
+         id="g7890" />
+      <g
+         id="g7892" />
+      <g
+         id="g7894" />
+      <g
+         id="g7896" />
+      <g
+         id="g7902" />
+      <g
+         id="g7910" />
+      <g
+         id="g7912" />
+      <g
+         id="g7914" />
+      <g
+         id="g7922" />
+      <g
+         id="g7924" />
+      <g
+         id="g7926" />
+      <g
+         id="g7934" />
+      <g
+         id="g7936" />
+      <g
+         id="g7938" />
+      <g
+         id="g7946" />
+      <g
+         id="g7948" />
+      <g
+         id="g7950" />
+      <g
+         id="g7958" />
+      <g
+         id="g7960" />
+      <g
+         id="g7962" />
+      <g
+         id="g7970" />
+      <g
+         id="g7972" />
+      <g
+         id="g7974" />
+      <g
+         id="g7982" />
+      <g
+         id="g7984" />
+      <g
+         id="g7986" />
+      <g
+         id="g7994" />
+      <g
+         id="g7996" />
+      <g
+         id="g7998" />
+      <g
+         id="g8006" />
+      <g
+         id="g8008" />
+      <g
+         id="g8010" />
+      <g
+         id="g8018" />
+      <g
+         id="g8020" />
+      <g
+         id="g8022" />
+      <g
+         id="g8030" />
+      <g
+         id="g8032" />
+      <g
+         id="g8034" />
+      <g
+         id="g8042" />
+      <g
+         id="g8050" />
+      <g
+         id="g8058" />
+      <g
+         id="g8066" />
+      <g
+         id="g8074" />
+      <g
+         id="g8082" />
+      <g
+         id="g8090" />
+      <g
+         id="g8098" />
+      <g
+         id="g8106" />
+      <g
+         id="g8114" />
+      <g
+         id="g8122" />
+      <g
+         id="g8130" />
+      <g
+         id="g8132" />
+      <g
+         id="g8134" />
+      <g
+         id="g8136" />
+      <g
+         id="g8138" />
+      <g
+         id="g8140" />
+      <g
+         id="g8142" />
+      <g
+         id="g8144" />
+      <g
+         id="g8146" />
+      <g
+         id="g8154" />
+      <g
+         id="g8156" />
+      <flowRoot
+         transform="matrix(0.8,0,0,-0.8,-51.407838,573.71573)"
+         xml:space="preserve"
+         id="flowRoot6307"
+         style="font-size:13px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"><flowRegion
+           id="flowRegion6309"><rect
+             id="rect6311"
+             width="976.05884"
+             height="52.038589"
+             x="16.539108"
+             y="10.862887"
+             style="font-weight:bold;letter-spacing:0px;-inkscape-font-specification:Sans Bold" /></flowRegion><flowPara
+           id="flowPara6313"
+           style="font-size:16px;font-weight:bold;-inkscape-font-specification:Sans Bold">Figure X. Calgary's GDP Has Significantly Diversified Since the 1980s, While Edmonton's Has Remained Relatively Diverse </flowPara><flowPara
+           style="font-size:16px;font-weight:normal;-inkscape-font-specification:Sans"
+           id="flowPara6317">Index of Industry Concentration, Major Canadian Cities, 1987 - 2014 (Lower Index = More Diversified)</flowPara></flowRoot>      <g
+         transform="translate(-1.8426516,-33.167606)"
+         inkscape:label="herfline"
+         id="g13448">
+        <g
+           id="g13450" />
+        <g
+           id="g13452" />
+        <g
+           id="g13454" />
+        <g
+           id="g13460" />
+        <g
+           id="g13462" />
+        <g
+           id="g13464" />
+        <g
+           id="g13466"
+           transform="translate(-28.561007,32.246298)">
+          <g
+             clip-path="url(#clipPath13470)"
+             id="g13468">
+            <path
+               id="path13474"
+               style="fill:none;stroke:#f8766d;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:1;stroke-opacity:1;stroke-dasharray:none"
+               d="m 74.22,478.16 17.85,4.99 17.86,-51.93 17.86,-25.91 17.85,28.48 17.86,26.63 17.85,-10.9 17.86,-22.78 17.86,-5.32 17.85,-33.55 17.86,-50.79 17.85,-39.61 17.86,-21.06 17.86,-36.77 17.85,-32.78 17.86,-8.58 17.85,-7.4 17.86,-5.71 17.86,-11.28 17.85,-2.29 17.86,-7.23 17.85,-10.14 17.86,3.09 17.86,0.1 17.85,-1.43 17.86,-1.41 17.86,1.95 17.85,3.96"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path13476"
+               style="fill:none;stroke:#b79f00;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:1;stroke-opacity:1;stroke-dasharray:none"
+               d="m 74.22,68.63 17.85,-1.87 17.86,-3.1 17.86,-2.18 17.85,4.08 17.86,4.43 17.85,-0.37 17.86,2.73 17.86,8.68 17.85,4.72 17.86,-4.62 17.85,-3.58 17.86,-3.29 17.86,-7.73 17.85,-6.55 17.86,-1.53 17.85,-1.65 17.86,-2.75 17.86,-2.56 17.85,-0.69 17.86,-0.49 17.85,1.17 17.86,1.38 17.86,1.93 17.85,1.39 17.86,1.69 17.86,3.13 17.85,2.56"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path13478"
+               style="fill:none;stroke:#00ba38;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:1;stroke-opacity:1;stroke-dasharray:none"
+               d="m 74.22,78.99 17.85,-0.41 17.86,0.76 17.86,-0.72 17.85,1.42 17.86,2.84 17.85,3.38 17.86,1.06 17.86,-0.36 17.85,-2.85 17.86,0.42 17.85,-2.13 17.86,3.28 17.86,1.83 17.85,-3.99 17.86,-3.62 17.85,-2.52 17.86,0.29 17.86,0.06 17.85,-0.34 17.86,-1.51 17.85,-1.85 17.86,-0.98 17.86,-0.07 17.85,0.22 17.86,-0.01 17.86,1.34 17.85,1.78"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path13480"
+               style="fill:none;stroke:#00bfc4;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:1;stroke-opacity:1;stroke-dasharray:none"
+               d="m 74.22,151.94 17.85,-7.83 17.86,-4.15 17.86,2.58 17.85,12.8 17.86,1.06 17.85,-1.63 17.86,-4.62 17.86,-4.88 17.85,-6.33 17.86,0.39 17.85,-4.9 17.86,-9.39 17.86,-1.08 17.85,3.48 17.86,3.8 17.85,6.95 17.86,-1.2 17.86,-1.84 17.85,3.09 17.86,3.15 17.85,9.35 17.86,16.39 17.86,1 17.85,-2.26 17.86,-4.24 17.86,-2.99 17.85,-6.35"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path13482"
+               style="fill:none;stroke:#619cff;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:1;stroke-opacity:1;stroke-dasharray:none"
+               d="m 74.22,110.39 17.85,-3.36 17.86,-1.8 17.86,0.6 17.85,4.38 17.86,3.85 17.85,3.94 17.86,4.57 17.86,1.91 17.85,3.53 17.86,-1.32 17.85,1.94 17.86,-2.95 17.86,3.65 17.85,-0.92 17.86,1.04 17.85,0.8 17.86,-0.54 17.86,0.42 17.85,0.65 17.86,0.61 17.85,-3.38 17.86,2.18 17.86,-2.64 17.85,0.1 17.86,0.86 17.86,3.97 17.85,1.91"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path13484"
+               style="fill:none;stroke:#f564e3;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:1;stroke-opacity:1;stroke-dasharray:none"
+               d="m 74.22,66.63 17.85,-3.5 17.86,1.14 17.86,3.49 17.85,8.71 17.86,4.79 17.85,0.74 17.86,3.37 17.86,-0.19 17.85,0.47 17.86,-1.19 17.85,0.48 17.86,1.19 17.86,-2.98 17.85,2.02 17.86,-1.08 17.85,-0.73 17.86,1.43 17.86,-1.86 17.85,1.71 17.86,2.63 17.85,1 17.86,7.75 17.86,-0.09 17.85,1.46 17.86,0.1 17.86,3.33 17.85,1.54"
+               inkscape:connector-curvature="0" />
+          </g>
+        </g>
+        <g
+           id="g13486" />
+        <g
+           id="g13488"
+           transform="translate(-28.561007,32.246298)">
+          <path
+             id="path13490"
+             style="fill:none;stroke:#000000;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             d="m 50.11,28.67 0,476.13"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g13492"
+           transform="translate(-28.561007,32.246298)">
+          <text
+             id="text13494"
+             transform="matrix(1,0,0,-1,23.02,35.9)">
+            <tspan
+               id="tspan13496"
+               sodipodi:role="line"
+               y="0"
+               x="0 5.5599999 11.12"
+               style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#7f7f7f;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica LT Std;-inkscape-font-specification:Helvetica">10%</tspan>
+          </text>
+          <text
+             id="text13498"
+             transform="matrix(1,0,0,-1,23.02,136.51)">
+            <tspan
+               id="tspan13500"
+               sodipodi:role="line"
+               y="0"
+               x="0 5.5599999 11.12"
+               style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#7f7f7f;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica LT Std;-inkscape-font-specification:Helvetica">15%</tspan>
+          </text>
+          <text
+             id="text13502"
+             transform="matrix(1,0,0,-1,23.02,237.13)">
+            <tspan
+               id="tspan13504"
+               sodipodi:role="line"
+               y="0"
+               x="0 5.5599999 11.12"
+               style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#7f7f7f;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica LT Std;-inkscape-font-specification:Helvetica">20%</tspan>
+          </text>
+          <text
+             id="text13506"
+             transform="matrix(1,0,0,-1,23.02,337.74)">
+            <tspan
+               id="tspan13508"
+               sodipodi:role="line"
+               y="0"
+               x="0 5.5599999 11.12"
+               style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#7f7f7f;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica LT Std;-inkscape-font-specification:Helvetica">25%</tspan>
+          </text>
+          <text
+             id="text13510"
+             transform="matrix(1,0,0,-1,23.02,438.36)">
+            <tspan
+               id="tspan13512"
+               sodipodi:role="line"
+               y="0"
+               x="0 5.5599999 11.12"
+               style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#7f7f7f;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica LT Std;-inkscape-font-specification:Helvetica">30%</tspan>
+          </text>
+        </g>
+        <g
+           id="g13514" />
+        <g
+           id="g13516" />
+        <g
+           id="g13518" />
+        <g
+           id="g13520" />
+        <g
+           id="g13522" />
+        <g
+           id="g13524" />
+        <g
+           id="g13526"
+           transform="translate(-28.561007,32.246298)">
+          <path
+             id="path13528"
+             style="fill:none;stroke:#000000;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             d="m 50.11,28.67 530.33,0"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g13530" />
+        <g
+           id="g13532" />
+        <g
+           id="g13534"
+           transform="translate(-28.561007,32.246298)">
+          <text
+             id="text13536"
+             transform="matrix(1,0,0,-1,63.1,14.4)">
+            <tspan
+               id="tspan13538"
+               sodipodi:role="line"
+               y="0"
+               x="0 5.5599999 11.12 16.68"
+               style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#7f7f7f;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica LT Std;-inkscape-font-specification:Helvetica">1987</tspan>
+          </text>
+          <text
+             id="text13540"
+             transform="matrix(1,0,0,-1,223.8,14.4)">
+            <tspan
+               id="tspan13542"
+               sodipodi:role="line"
+               y="0"
+               x="0 5.5599999 11.12 16.68"
+               style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#7f7f7f;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica LT Std;-inkscape-font-specification:Helvetica">1996</tspan>
+          </text>
+          <text
+             id="text13544"
+             transform="matrix(1,0,0,-1,384.51,14.4)">
+            <tspan
+               id="tspan13546"
+               sodipodi:role="line"
+               y="0"
+               x="0 5.5599999 11.12 16.68"
+               style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#7f7f7f;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica LT Std;-inkscape-font-specification:Helvetica">2005</tspan>
+          </text>
+          <text
+             id="text13548"
+             transform="matrix(1,0,0,-1,545.21,14.4)">
+            <tspan
+               id="tspan13550"
+               sodipodi:role="line"
+               y="0"
+               x="0 5.5599999 11.12 16.68"
+               style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#7f7f7f;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica LT Std;-inkscape-font-specification:Helvetica">2014</tspan>
+          </text>
+        </g>
+        <g
+           id="g13552" />
+        <g
+           id="g13554" />
+        <g
+           id="g13556" />
+        <g
+           id="g13558" />
+        <g
+           id="g13560" />
+        <g
+           id="g13562" />
+        <g
+           id="g13564"
+           transform="translate(-28.561007,32.246298)">
+          <text
+             id="text13566"
+             transform="matrix(0,1,1,0,19.42,201.43)">
+            <tspan
+               id="tspan13568"
+               sodipodi:role="line"
+               y="0"
+               x="0 8.0039997 14.004 20.676001 27.348 34.02 44.015999 46.68 52.68 56.015999 64.68 71.351997 78.024002 84.024002 90.695999 97.367996 100.704 104.58 111.252 114.588 117.252 123.924"
+               style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica LT Std;-inkscape-font-specification:Helvetica">Economic Concentration</tspan>
+          </text>
+        </g>
+        <g
+           id="g13570" />
+        <g
+           id="g13572" />
+        <g
+           id="g13574" />
+        <g
+           id="g13576" />
+        <g
+           id="g13578" />
+        <g
+           id="g13580"
+           transform="translate(-28.561007,32.246298)">
+          <path
+             id="path13582"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 590.47,204.89 122.09,0 0,123.68 -122.09,0 0,-123.68 z"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g13584" />
+        <g
+           id="g13586"
+           transform="translate(-28.561007,32.246298)">
+          <text
+             id="text13588"
+             transform="matrix(1,0,0,-1,594.72,317.14)">
+            <tspan
+               id="tspan13590"
+               sodipodi:role="line"
+               y="0"
+               x="0 7.2199998 10 13.33"
+               style="font-size:10px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica LT Std;-inkscape-font-specification:Helvetica-Bold">City</tspan>
+          </text>
+        </g>
+        <g
+           id="g13592" />
+        <g
+           id="g13594" />
+        <g
+           id="g13596" />
+        <g
+           id="g13598"
+           transform="translate(-28.561007,32.246298)">
+          <path
+             id="path13600"
+             style="fill:none;stroke:#f8766d;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             d="m 596.45,304.18 13.83,0"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g13602" />
+        <g
+           id="g13604" />
+        <g
+           id="g13606" />
+        <g
+           id="g13608"
+           transform="translate(-28.561007,32.246298)">
+          <path
+             id="path13610"
+             style="fill:none;stroke:#b79f00;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             d="m 596.45,286.9 13.83,0"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g13612" />
+        <g
+           id="g13614" />
+        <g
+           id="g13616" />
+        <g
+           id="g13618"
+           transform="translate(-28.561007,32.246298)">
+          <path
+             id="path13620"
+             style="fill:none;stroke:#00ba38;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             d="m 596.45,269.62 13.83,0"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g13622" />
+        <g
+           id="g13624" />
+        <g
+           id="g13626" />
+        <g
+           id="g13628"
+           transform="translate(-28.561007,32.246298)">
+          <path
+             id="path13630"
+             style="fill:none;stroke:#00bfc4;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             d="m 596.45,252.34 13.83,0"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g13632" />
+        <g
+           id="g13634" />
+        <g
+           id="g13636" />
+        <g
+           id="g13638"
+           transform="translate(-28.561007,32.246298)">
+          <path
+             id="path13640"
+             style="fill:none;stroke:#619cff;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             d="m 596.45,235.06 13.83,0"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g13642" />
+        <g
+           id="g13644" />
+        <g
+           id="g13646" />
+        <g
+           id="g13648"
+           transform="translate(-28.561007,32.246298)">
+          <path
+             id="path13650"
+             style="fill:none;stroke:#f564e3;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             d="m 596.45,217.78 13.83,0"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g13652" />
+        <g
+           id="g13654"
+           transform="translate(-28.561007,32.246298)">
+          <text
+             id="text13656"
+             transform="matrix(1,0,0,-1,614.16,300.59)">
+            <tspan
+               id="tspan13658"
+               sodipodi:role="line"
+               y="0"
+               x="0 7.2199998 12.78 15 20.559999 26.120001 29.75"
+               style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica LT Std;-inkscape-font-specification:Helvetica">Calgary</tspan>
+          </text>
+        </g>
+        <g
+           id="g13660" />
+        <g
+           id="g13662"
+           transform="translate(-28.561007,32.246298)">
+          <text
+             id="text13664"
+             transform="matrix(1,0,0,-1,614.16,283.31)">
+            <tspan
+               id="tspan13666"
+               sodipodi:role="line"
+               y="0"
+               x="0 6.6700001 12.23 20.559999 26.120001 31.68 34.459999 40.02"
+               style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica LT Std;-inkscape-font-specification:Helvetica">Edmonton</tspan>
+          </text>
+        </g>
+        <g
+           id="g13668" />
+        <g
+           id="g13670"
+           transform="translate(-28.561007,32.246298)">
+          <text
+             id="text13672"
+             transform="matrix(1,0,0,-1,614.16,266.03)">
+            <tspan
+               id="tspan13674"
+               sodipodi:role="line"
+               y="0"
+               x="0 8.3299999 13.89 19.450001 22.23 25.559999 31.120001 36.68"
+               style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica LT Std;-inkscape-font-specification:Helvetica">Montreal</tspan>
+          </text>
+        </g>
+        <g
+           id="g13676" />
+        <g
+           id="g13678"
+           transform="translate(-28.561007,32.246298)">
+          <text
+             id="text13680"
+             transform="matrix(1,0,0,-1,614.16,248.75)">
+            <tspan
+               id="tspan13682"
+               sodipodi:role="line"
+               y="0"
+               x="0 7.7800002 10.56 13.34 18.700001 25.77 31.33 34.110001 39.669998 45.23 50.790001 53.57 61.349998 66.910004 69.690002 71.910004 77.470001 83.029999 88.589996"
+               style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica LT Std;-inkscape-font-specification:Helvetica">Ottawa and Gatineau</tspan>
+          </text>
+        </g>
+        <g
+           id="g13684" />
+        <g
+           id="g13686"
+           transform="translate(-28.561007,32.246298)">
+          <text
+             id="text13688"
+             transform="matrix(1,0,0,-1,614.16,231.47)">
+            <tspan
+               id="tspan13690"
+               sodipodi:role="line"
+               y="0"
+               x="0 4.9099998 10.47 13.8 19.360001 24.92 27.700001"
+               style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica LT Std;-inkscape-font-specification:Helvetica">Toronto</tspan>
+          </text>
+        </g>
+        <g
+           id="g13692" />
+        <g
+           id="g13694"
+           transform="translate(-28.561007,32.246298)">
+          <text
+             id="text13696"
+             transform="matrix(1,0,0,-1,614.16,214.19)">
+            <tspan
+               id="tspan13698"
+               sodipodi:role="line"
+               y="0"
+               x="0 5.9699998 11.53 17.09 22.09 27.65 33.209999 37.959999 43.52"
+               style="font-size:10px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Helvetica LT Std;-inkscape-font-specification:Helvetica">Vancouver</tspan>
+          </text>
+        </g>
+        <g
+           id="g13700" />
+        <g
+           id="g13702" />
+        <g
+           id="g13704" />
+        <g
+           id="g13706" />
+        <g
+           id="g13708" />
+        <g
+           id="g13710" />
+        <g
+           id="g13712" />
+        <g
+           id="g13714" />
+        <g
+           id="g13716" />
+        <g
+           id="g13728" />
+        <g
+           id="g13730" />
+      </g>
+    </g>
+  </g>
+</svg>
