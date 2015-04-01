@@ -5,24 +5,28 @@ library(scales)
 
 setwd("V:/Personal EE Folders/PReid/Diversification")
 
-
 # -----------------------------------------------------------
-# GDP by Industry
+# Functions for loading data and computing total variances
 # -----------------------------------------------------------
-data<-read.csv('gdp.csv')
-data<-melt(data)
-names(data)<-c("Industry","City","Year","GDP")
-data<-data[data$Industry != 'All Industries',]
-data$Year<-as.numeric(substr(as.character(data$Year),2,5))
-data$GDP<-as.numeric(as.character(data$GDP))
+load.clean<-function(filepath) {
 
-share<- function(x) x/sum(x)
-data<-ddply(data,c("City","Year"),transform,Share=share(GDP))
-
-herfindal<-function(x) sum(x**2)
-entropy<-function(x) -sum(x*log(x))
-data<-ddply(data,c("City","Year"),transform,herfindal=herfindal(Share),entropy=entropy(Share))
-data<-ddply(data,c("City","Industry"),transform, growth=c(NA,exp(diff(log(GDP)))-1))
+  df<-read.csv(filepath)
+  df<-melt(df)
+  names(df)<-c("Industry","City","Year","GDP")
+  df<-df[df$Industry != 'All Industries',]
+  df$Year<-as.numeric(substr(as.character(df$Year),2,5))
+  df$GDP<-as.numeric(as.character(df$GDP))
+  
+  share <- function(x) x/sum(x)
+  df<-ddply(df,c("City","Year"),here(transform),Share=share(GDP))
+  
+  herfindal<-function(x) sum(x**2)
+  entropy<-function(x) -sum(x*log(x))
+  df<-ddply(df,c("City","Year"),here(transform),herfindal=herfindal(Share),entropy=entropy(Share))
+  df<-ddply(df,c("City","Industry"),here(transform), growth=c(NA,exp(diff(log(GDP)))-1))
+  
+  return(df)
+}
 
 total.var<-function(df,start,end,part){
   df<-df[df$Year >= start & df$Year <= end,]
@@ -38,6 +42,8 @@ total.var<-function(df,start,end,part){
   } 
 }
 
+data<-load.clean("data/gdp.csv")
+
 city.vars<-ddply(data,"City",function(df) c(total.var(df,1987,2014,'var'),
                                             total.var(df,1987,2014,'cov'),
                                             total.var(df,1987,2014,'total')))
@@ -48,6 +54,10 @@ city.vars.time<-ddply(data,"City",function(df) c(total.var(df,1987,1996,'total')
                                                  total.var(df,2007,2014,'total')))
 names(city.vars.time)<-c("City","1987-1996","1997-2006","2007-2014")
 
+# -----------------------------------------------------------
+# Plotting functions
+# -----------------------------------------------------------
+
 # Set position for stacked bar chart labels
 data<-ddply(data,c("City","Year"), transform, position = cumsum(Share) - 0.5*Share)
 
@@ -55,39 +65,27 @@ data<-ddply(data,c("City","Year"), transform, position = cumsum(Share) - 0.5*Sha
 breaks<-seq(1987,2014,9)
 majcities<-c("Calgary","Ottawa and Gatineau","Toronto","Vancouver","Montreal","Edmonton")
 
-# -----------------------------------------------------------
-# Exports
-# -----------------------------------------------------------
-
-exp.all<-melt(read.csv('exp_all.csv'))
-exp.nomin<-melt(read.csv('exp_nominerals.csv'))
-exp.all$Country<-replace(exp.all$Country,exp.all$Country=='',NA)
-exp.nomin$Country<-replace(exp.nomin$Country,exp.nomin$Country=='',NA)
-
-exp.all<-ddply(exp.all,"variable",transform,share=share(value))
-exp.nomin<-ddply(exp.nomin,"variable",transform,share=share(value))
-
-exp.all<-ddply(exp.all,"variable",transform,herfindal=herfindal(share))
-exp.nomin<-ddply(exp.nomin,"variable",transform,herfindal=herfindal(share))
-
-# -----------------------------------------------------------
-# Plots
-# -----------------------------------------------------------
-
-# Barchart of 2014 total variances
-city.vars$City<-factor(city.vars$City,levels=city.vars$City[order(city.vars$Total)])
-city.vars<-melt(city.vars)
-city.vars$Edmonton<-city.vars$City == 'Edmonton'
-varbar<-ggplot(city.vars[city.vars$variable == 'Total',],aes(x=City,y=value,fill=Edmonton)) + 
-  geom_bar(stat='identity',show_guide=FALSE) +
-  geom_text(aes(label=sprintf("%1.2f%%", 100*value)),hjust=-0.25) +
-  coord_flip() +
-  scale_x_discrete(name=element_blank()) +
-  scale_y_continuous(name='Total Variance',expand=c(0,0),limits=c(0,0.002),labels=percent) +
-  ggtitle('Total Variance Based on 2014 GDP by Industry\n(Higher Variance = Less Stability)') +
+ThemeMod <- theme_grey() + 
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         axis.line=element_line(color='black'),axis.ticks=element_blank(),
         panel.background=element_blank(),legend.key=element_blank())
+
+
+# Barchart of 2014 total variances
+varbar<-function(df,city) {
+
+  df$City<-factor(df$City,levels=df$City[order(df$Total)])
+  df<-melt(df)
+  df$highlight<-df$City == city
+  varbar<-ggplot(df[df$variable == 'Total',],aes(x=City,y=value,fill=highlight)) + 
+    geom_bar(stat='identity',show_guide=FALSE) +
+    geom_text(aes(label=sprintf("%1.2f%%", 100*value)),hjust=-0.25) +
+    coord_flip() +
+    scale_x_discrete(name=element_blank()) +
+    scale_y_continuous(name='Total Variance',expand=c(0,0),limits=c(0,0.002),labels=percent) +
+    ggtitle('Total Variance Based on 2014 GDP by Industry\n(Higher Variance = Less Stability)') +
+    ThemeMod
+}
 
 # Barchart of 2014 variances
 stackedvarbar<-ggplot(city.vars[city.vars$variable != 'Total',],aes(x=City,y=value,fill=variable)) + 
@@ -97,9 +95,7 @@ stackedvarbar<-ggplot(city.vars[city.vars$variable != 'Total',],aes(x=City,y=val
   scale_x_discrete(name=element_blank()) +
   scale_y_continuous(name='Total Variance',expand=c(0,0),limits=c(0,0.002),labels=percent) +
   ggtitle('Total Variance Based on 2014 GDP by Industry\n(Higher Variance = Less Stability)') +
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-        axis.line=element_line(color='black'),axis.ticks=element_blank(),
-        panel.background=element_blank(),legend.key=element_blank())
+  ThemeMod
 
 # Line chart of variances over time
 city.vars.time<-melt(city.vars.time)
@@ -109,21 +105,9 @@ varlines<-ggplot(city.vars.time[city.vars.time$City %in% majcities,],aes(x=varia
   scale_x_discrete(name=element_blank()) +
   scale_y_continuous(name='Total Variance',labels=percent) +
   ggtitle('Total Variance Based on GDP by Industry Over Time') +
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-        axis.line=element_line(color='black'),axis.ticks=element_blank(),
-        panel.background=element_blank(),legend.key=element_blank())
+  ThemeMod
 
-# Faceted line charts of GDP growth by industry and city
-data$Edmonton<-data$City=='Edmonton'
-industrylines<-ggplot(data,aes(x=Year,y=growth,group=City)) +
-  geom_line(aes(colour=Edmonton,alpha=Edmonton)) +
-  facet_wrap(~Industry) +
-  scale_x_continuous(name=element_blank(),breaks=breaks,labels=breaks) +
-  scale_y_continuous(name='GDP Growth',labels=percent) +
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-        axis.line=element_line(color='black'),axis.ticks=element_blank(),
-        panel.background=element_blank(),legend.key=element_blank())
-
+# Faceted line charts of GDP growth by industry with max/min shaded
 data<-ddply(data,c("Year","Industry"),transform,ymax=max(growth),ymin=min(growth))
 industrylines<-ggplot(data) +
   geom_ribbon(aes(x=Year,ymax=ymax,ymin=ymin,fill='area'),alpha=0.5) +
@@ -133,25 +117,23 @@ industrylines<-ggplot(data) +
   scale_y_continuous(name='GDP Growth',labels=percent) +
   scale_fill_manual(values=c('area'='grey'),labels="Range of City Growth Rates") +
   scale_color_manual(values=c('line'='#00a6ff'),labels="Edmonton Growth Rate") +
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-        axis.line=element_line(color='black'),axis.ticks=element_blank(),
-        panel.background=element_blank(),legend.key=element_blank(),legend.title=element_blank(),
-        strip.background=element_blank())
+  ThemeMod
 
 # Barchart of 2014 Herfindal indices
-data.2014<-data[data$Year==2014,]
-data.2014$City<-factor(data.2014$City,levels=data.2014$City[order(data.2014$herfindal)])
-data.2014$Edmonton<-data.2014$City == 'Edmonton'
-herfbar<-ggplot(data.2014,aes(x=City,y=herfindal)) + 
-  geom_bar(aes(fill=Edmonton),stat='identity',show_guide=FALSE) +
-  geom_text(aes(label=sprintf("%1.1f%%", 100*herfindal)),hjust=-0.25) +
-  coord_flip() +
-  scale_x_discrete(name=element_blank()) +
-  scale_y_continuous(name='Economic Concentration',expand=c(0,0),limits=c(0,0.2),labels=percent) +
-  ggtitle('Economic Concentration, 2014\n(Lower Concentration = More Diverse)') +
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-        axis.line=element_line(color='black'),axis.ticks=element_blank(),
-        panel.background=element_blank(),legend.key=element_blank())
+makeherfbar <- function(df,year,city) {
+  df.sub<-df[df$Year==year & df$Industry=='Business Services',]
+  df.sub$City<-factor(df.sub$City,levels=df.sub$City[order(df.sub$herfindal)])
+  df.sub$highlight<-df.sub$City == city
+  herfbar<-ggplot(df.sub,aes(x=City,y=herfindal)) + 
+    geom_bar(aes(fill=highlight),stat='identity',show_guide=FALSE) +
+    geom_text(aes(label=sprintf("%1.1f%%", 100*herfindal)),hjust=-0.25) +
+    coord_flip() +
+    scale_x_discrete(name=element_blank()) +
+    scale_y_continuous(name='Economic Concentration',expand=c(0,0),limits=c(0,0.2),labels=percent) +
+    ggtitle('Economic Concentration, 2014\n(Lower Concentration = More Diverse)') +
+    ThemeMod
+  return(herfbar)
+}
 
 # Line chart of Herfindal indices over time
 herfline<-ggplot(data[data$City %in% majcities,],aes(x=Year,y=herfindal,colour=City)) +
@@ -160,9 +142,7 @@ herfline<-ggplot(data[data$City %in% majcities,],aes(x=Year,y=herfindal,colour=C
   guides(fill = guide_legend(reverse = TRUE)) +
   scale_x_continuous(name=element_blank(),breaks=breaks,labels=breaks) +
   scale_y_continuous(name='Economic Concentration',labels=percent) +
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-        axis.line=element_line(color='black'),axis.ticks=element_blank(),
-        panel.background=element_blank(),legend.key=element_blank())
+  ThemeMod
 
 # Stacked area chart of GDP data, Edmonton
 gdparea<-ggplot(data[data$City=='Edmonton',],aes(Year,Share,fill=Industry)) + 
@@ -171,9 +151,7 @@ gdparea<-ggplot(data[data$City=='Edmonton',],aes(Year,Share,fill=Industry)) +
   ggtitle('GDP Breakdown by Industry, Edmonton CMA') +
   scale_x_continuous(name=element_blank(),breaks=breaks,labels=breaks,expand=c(0,0)) +
   scale_y_continuous(name='% of GDP',labels=percent,expand=c(0,0)) +
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-        axis.line=element_line(color='black'),axis.ticks=element_blank(),
-        panel.background=element_blank(),legend.key=element_blank())
+  ThemeMod
 
 # Stacked bar chart of GDP data, Edmonton 1994,2004,2014
 gdpbars<-ggplot(data[data$City=='Edmonton' & data$Year %in% c(1994,2004,2014),],aes(factor(Year),Share)) + 
@@ -183,9 +161,7 @@ gdpbars<-ggplot(data[data$City=='Edmonton' & data$Year %in% c(1994,2004,2014),],
   guides(fill = guide_legend(reverse = TRUE),color=FALSE) +
   scale_y_continuous(name='% of GDP',labels=percent) +
   scale_x_discrete(name=element_blank()) +
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-        axis.line=element_line(color='black'),axis.ticks=element_blank(),
-        panel.background=element_blank(),legend.key=element_blank())
+  ThemeMod
 
 # Stacked bar chart of GDP data, major cities
 data.2014$City<-factor(data.2014$City,levels=data.2014$City[order(data.2014$herfindal)])
@@ -196,7 +172,5 @@ gdpcompare<-ggplot(data.2014[data.2014$City %in% majcities,],aes(x=City,y=Share)
   guides(fill = guide_legend(reverse = TRUE),color=FALSE) +
   scale_y_continuous(name='% of GDP',labels=percent) +
   scale_x_discrete(name=element_blank()) +
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-        axis.line=element_line(color='black'),axis.ticks=element_blank(),
-        panel.background=element_blank(),legend.key=element_blank())
+  ThemeMod
 
